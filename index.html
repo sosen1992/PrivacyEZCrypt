@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Privacy Policy — EZCrypt</title>
+  <title>Privacy Policy & Terms of Service — EZCrypt</title>
   <style>
     :root { --bg:#0b1220; --card:#131c2e; --text:#e6ecf5; --muted:#9aa7c0; --accent:#7c6cff; }
     * { box-sizing: border-box; }
@@ -30,112 +30,78 @@
 </head>
 <body>
   <header>
-    <h1>Privacy Policy</h1>
-    <p>EZCrypt ("the App") — Last updated: 21 October 2026</p>
+    <h1>Privacy Policy &amp; Terms of Service</h1>
+    <p>EZCrypt ("the App") — Last updated: 6 November 2026</p>
   </header>
   <main>
     <div class="card">
-      <p>This Privacy Policy explains how EZCrypt ("we", "us", or "our") handles information when you use our
-        end-to-end encrypted messaging application <strong>EZCrypt</strong> on Android, iOS, or other supported
-        platforms. By installing or using the App you agree to the practices described below.</p>
+      <p>This document contains both the Privacy Policy and Terms of Service for <strong>EZCrypt</strong> ("we", "us", or "our"), an
+        offline-first, end-to-end encrypted messaging and encryption tool on Android, iOS, or other supported
+        platforms. By downloading, installing, or using the App, you agree to the practices and terms described below.</p>
       <p class="muted">Developer / Publisher: SO SEN</p>
     </div>
 
     <div class="card">
       <h2>1. Information We Do Not Collect</h2>
-      <p>EZCrypt is built around privacy. Messages, contacts, and cryptographic keys are handled on your own device:</p>
+      <p>EZCrypt is architected around absolute local privacy. Messages, notes, contacts, and cryptographic keys remain exclusively on your device:</p>
       <ul>
-        <li><strong>Message content is not stored or read by us.</strong> Messages are encrypted on your device and can only be decrypted by the intended recipient.</li>
-        <li>Your private keys never leave your device and are never transmitted to us.</li>
-        <li>Contact records (names and public keys) are stored locally on your device only.</li>
-        <li>We do not require an account, email address, or phone number to use the App.</li>
+        <li><strong>Message and note content is not stored or read by us.</strong> All plain text is encrypted locally using AES-256-GCM and ECC P-256 hybrid cryptography before transmission or storage.</li>
+        <li>Your private encryption keys never leave your device and are never backed up to our servers.</li>
+        <li>Contact records, public keys, and cryptographic pairings are stored locally in secure on-device storage.</li>
+        <li>We do not require account registration, telephone numbers, or email sign-ins.</li>
       </ul>
     </div>
 
     <div class="card">
-      <h2>2. Information We Collect — Advertising (AdMob)</h2>
-      <p><strong>EZCrypt is monetized by displaying advertisements served by Google AdMob.</strong> We use AdMob
-        ("third-party advertising services") to show ads that help keep the App free to use. To serve and measure
-        ads, Google (and its partners) may automatically collect and process certain information when you use the
-        App, including:</p>
+      <h2>2. Advertising &amp; Third-Party SDKs (Google AdMob)</h2>
+      <p><strong>EZCrypt is monetized by displaying advertisements served by Google AdMob</strong> to help keep the utility free to use. AdMob and its bidding mediation partners may automatically collect and process certain non-personal device diagnostics, including:</p>
       <ul>
-        <li>Your mobile <strong>Advertising ID</strong> (e.g. Google Advertising ID / iOS Advertising Identifier).</li>
-        <li>Device and hardware identifiers, operating system version, and app version.</li>
-        <li>IP address, approximate location, and network information.</li>
-        <li>Information about your interaction with advertisements (e.g. ads shown, clicked).</li>
+        <li>Mobile <strong>Advertising ID</strong> (Google GAID or iOS IDFA).</li>
+        <li>Device identifiers, operating system build, and application version.</li>
+        <li>IP address, general network metrics, and approximate geolocation.</li>
+        <li>Ad interaction and performance telemetry for frequency management and fraud prevention.</li>
       </ul>
-      <p>This information is collected and processed by Google in accordance with Google's own policies and the
-        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.
-        You can learn more at
-        <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">How Google uses data from apps that use AdMob</a>.</p>
-      <h3>Personalized vs. Non-Personalized Ads</h3>
-      <p>AdMob may show personalized ads based on the Advertising ID and other collected data. Where applicable
-        (e.g. in the European Economic Area, the UK, and where required by law), we request consent before
-        personalized advertising is enabled, and we support Google's UMP (User Messaging Platform) for consent
-        management. You can withdraw consent or opt out of personalized ads at any time through your device
-        settings (e.g. "Reset advertising ID" or disabling ad personalization).</p>
+      <p>This information is processed directly by Google under the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.</p>
+      <h3>Consent &amp; User Messaging Platform (UMP)</h3>
+      <p>Where required by applicable regulations (such as in the European Economic Area and the United Kingdom), we implement Google's User Messaging Platform (UMP) to gather explicit user consent before serving ads. You can manage or revoke personalized advertising preferences at any time through your device settings.</p>
     </div>
 
     <div class="card">
-      <h2>3. How We Use Information</h2>
+      <h2>3. Terms of Service</h2>
+      <p>By using EZCrypt, you expressly understand and agree to the following conditions:</p>
       <ul>
-        <li>To provide, maintain, and improve the core encrypted messaging features of the App.</li>
-        <li>To display and measure advertisements through AdMob, which financially supports the operation and continued development of the free App.</li>
-        <li>To detect, prevent, and address fraud, security issues, and technical problems related to advertising.</li>
+        <li><strong>User Cryptographic Responsibility:</strong> EZCrypt is an offline, client-side encryption utility. Because we do not possess master keys or escrow recovery mechanisms, you are solely responsible for maintaining backups of your private keys and passwords. If you lose your private key or forget your decryption credentials, your encrypted data cannot be recovered by us.</li>
+        <li><strong>Lawful Use Only:</strong> You agree to use EZCrypt strictly for lawful communications and data protection purposes. You must not use the application to facilitate illegal operations, distribute harmful software, or evade valid legal obligations.</li>
+        <li><strong>Advertising Consent:</strong> EZCrypt is provided free of charge supported by advertising. Using the application constitutes consent to the delivery of third-party advertisements via Google AdMob and certified networks.</li>
+        <li><strong>Intellectual Property:</strong> All software architecture, interface designs, cryptographic integration logic, and branding belong exclusively to SO SEN. Reverse engineering, decompiling, or distributing unauthorized clones of the application package is prohibited.</li>
       </ul>
     </div>
 
     <div class="card">
-      <h2>4. Data Sharing</h2>
-      <p>We do not sell your personal information. Data is only shared with:</p>
-      <ul>
-        <li><strong>Google AdMob</strong> — to serve and measure advertisements, as described in Section 2.</li>
-        <li>As required by law, regulation, or legal process.</li>
-      </ul>
+      <h2>4. Data Retention &amp; Security</h2>
+      <p>Encrypted messages, notes, and local keys reside on your device until manually deleted or cleared via device application cache. Communications with third-party advertising SDKs are secured using industry-standard TLS/HTTPS encryption protocols. While we implement rigorous client-side cryptographic standards, no computing environment is unconditionally immune to device-level compromise.</p>
     </div>
 
     <div class="card">
-      <h2>5. Data Retention</h2>
-      <p>Encrypted messages, contacts, and keys stored on your device remain there until you delete them. Any data
-        processed by third-party advertising services is retained according to their own retention policies.</p>
+      <h2>5. Children's Privacy</h2>
+      <p>The App is not directed to children under 13 (or the minimum legal age in your territory). We do not knowingly collect personal identifiable data from children.</p>
     </div>
 
     <div class="card">
-      <h2>6. Security</h2>
-      <p>We take data protection seriously. Messages are encrypted using strong, industry-standard cryptography
-        (ECC P-256 hybrid with AES-256-GCM) on your device. Note that no method of transmission or storage is
-        100% secure, and we cannot guarantee absolute security.</p>
+      <h2>6. Changes to Policy &amp; Terms</h2>
+      <p>We may update this documentation periodically. Continued use of EZCrypt following any modifications signifies your acceptance of the updated terms.</p>
     </div>
 
     <div class="card">
-      <h2>7. Children's Privacy</h2>
-      <p>The App is not directed to children under 13 (or the applicable minimum age in your jurisdiction). We do
-        not knowingly collect personal information from children. If you believe a child has provided us with
-        information, please contact us so we can delete it.</p>
+      <h2>7. Contact Information</h2>
+      <p>If you have questions, inquiries, or support requests regarding this Privacy Policy or the Terms of Service, please reach out to:</p>
+      <p><strong>Developer:</strong> SO SEN<br />
+         <strong>App:</strong> EZCrypt (com.sosen.ezcrypt)<br />
+         <strong>Email:</strong> <a href="mailto:lekmuoy1@gmail.com">lekmuoy1@gmail.com</a><br />
+         <strong>Address:</strong> PhumeToulpongro, Songkat ChomChao 1, KhanPou Saen Chey, Phnom Penh 12090, Cambodia</p>
     </div>
 
-    <div class="card">
-      <h2>8. Third-Party Links / Services</h2>
-      <p>The App may contain links to or integrate with third-party services (including Google and its advertising
-        partners). Our Privacy Policy does not apply to those third parties. We encourage you to review the privacy
-        policies of any third-party services you interact with.</p>
-    </div>
-
-    <div class="card">
-      <h2>9. Changes to This Privacy Policy</h2>
-      <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page, and the
-        "Last updated" date at the top will be revised. Continued use of the App after changes are posted
-        constitutes acceptance of the updated policy.</p>
-    </div>
-
-    <div class="card">
-      <h2>10. Contact Us</h2>
-      <p>If you have any questions or concerns about this Privacy Policy or our data practices, please contact us
-        at: <a href="mailto:lekmuoy1@gmail.com">lekmuoy1@gmail.com</a></p>
-      <p class="muted">Developer: SO SEN<br />App: EZCrypt (package: com.sosen.ezcrypt)</p>
-    </div>
-
-    <p class="updated">© 2026 EZCrypt · Standalone privacy policy document</p>
+    <p class="updated">&copy; 2026 SO SEN &mdash; EZCrypt &mdash; All Rights Reserved.</p>
   </main>
 </body>
 </html>
